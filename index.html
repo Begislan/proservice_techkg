@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональные Разработка, Разработка, Айтишники, IT, Pro Service ">
+    <title>ProService Tech KG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER & NAVIGATION
+    ========================================== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo" aria-label="NexusTech Главная">
+                <img src="img/logo.png" class="header__logo-icon">
+
+                <span class="header__logo-text">ProService<span>TechKG</span></span>
+            </a>
+
+            <nav class="header__nav" id="mainNav" aria-label="Главная навигация">
+                <ul class="header__nav-list">
+                    <li><a href="#about" class="header__nav-link active">О компании</a></li>
+                    <li><a href="#services" class="header__nav-link">Услуги</a></li>
+                    <li><a href="#technologies" class="header__nav-link">Технологии</a></li>
+                    <li><a href="#portfolio" class="header__nav-link">Портфолио</a></li>
+                    <li><a href="#testimonials" class="header__nav-link">Отзывы</a></li>
+                    <li><a href="#contact" class="header__nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#contact" class="btn btn--primary header__cta">Связаться</a>
+                <button class="header__burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+            <ul class="mobile-menu__list">
+                <li><a href="#about" class="mobile-menu__link">О компании</a></li>
+                <li><a href="#services" class="mobile-menu__link">Услуги</a></li>
+                <li><a href="#technologies" class="mobile-menu__link">Технологии</a></li>
+                <li><a href="#portfolio" class="mobile-menu__link">Портфолио</a></li>
+                <li><a href="#testimonials" class="mobile-menu__link">Отзывы</a></li>
+                <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+            </ul>
+            <a href="#contact" class="btn btn--primary mobile-menu__cta">Связаться с нами</a>
+        </nav>
+    </div>
+
+    <!-- ==========================================
+         HERO SECTION
+    ========================================== -->
+    <section class="hero" id="hero">
+        <!-- Animated Background Grid -->
+        <div class="hero__bg-grid" aria-hidden="true"></div>
+        <!-- Floating Shapes -->
+        <div class="hero__shapes" aria-hidden="true">
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+            <div class="hero__shape hero__shape--3"></div>
+            <div class="hero__shape hero__shape--4"></div>
+        </div>
+        <!-- Gradient Overlay -->
+        <div class="hero__gradient" aria-hidden="true"></div>
+
+        <div class="container hero__container">
+            <div class="hero__content">
+<!--                <div class="hero__badge reveal" data-reveal-delay="0">-->
+<!--                    <span class="hero__badge-dot"></span>-->
+<!--                    <span>Инновации в каждом решении</span>-->
+<!--                </div>-->
+                <h1 class="hero__title reveal" data-reveal-delay="100">
+                    Преобразуем идеи<br>
+                    <span class="gradient-text">в цифровую реальность</span>
+                </h1>
+                <p class="hero__desc reveal" data-reveal-delay="200">
+                    Мы создаем высоконагруженные программные решения, внедряем искусственный интеллект и строим масштабируемую облачную инфраструктуру для лидеров рынка.
+                </p>
+<!--                <div class="hero__actions reveal" data-reveal-delay="300">-->
+<!--                    <a href="#portfolio" class="btn btn&#45;&#45;primary btn&#45;&#45;lg">Наши проекты</a>-->
+<!--                    <a href="#contact" class="btn btn&#45;&#45;outline btn&#45;&#45;lg">Обсудить проект</a>-->
+<!--                </div>-->
+<!--                <div class="hero__stats reveal" data-reveal-delay="400">-->
+<!--                    <div class="hero__stat">-->
+<!--                        <span class="hero__stat-value">150+</span>-->
+<!--                        <span class="hero__stat-label">Проектов</span>-->
+<!--                    </div>-->
+<!--                    <div class="hero__stat-divider"></div>-->
+<!--                    <div class="hero__stat">-->
+<!--                        <span class="hero__stat-value">12</span>-->
+<!--                        <span class="hero__stat-label">Лет опыта</span>-->
+<!--                    </div>-->
+<!--                    <div class="hero__stat-divider"></div>-->
+<!--                    <div class="hero__stat">-->
+<!--                        <span class="hero__stat-value">98%</span>-->
+<!--                        <span class="hero__stat-label">NPS</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+
+            <!-- Abstract Tech Illustration (Pure CSS/HTML) -->
+            <div class="hero__visual reveal" data-reveal-delay="200">
+                <div class="tech-cube">
+                    <div class="tech-cube__face tech-cube__face--front">
+                        <div class="tech-cube__grid">
+                            <div class="tech-cube__cell"></div>
+                            <div class="tech-cube__cell"></div>
+                            <div class="tech-cube__cell"></div>
+                            <div class="tech-cube__cell"></div>
+                            <div class="tech-cube__cell tech-cube__cell--center"></div>
+                            <div class="tech-cube__cell"></div>
+                            <div class="tech-cube__cell"></div>
+                            <div class="tech-cube__cell"></div>
+                            <div class="tech-cube__cell"></div>
+                        </div>
+                    </div>
+                    <div class="tech-cube__face tech-cube__face--back">
+                        <div class="tech-cube__ring"></div>
+                    </div>
+                    <div class="tech-cube__face tech-cube__face--right">
+                        <div class="tech-cube__bars">
+                            <div class="tech-cube__bar"></div>
+                            <div class="tech-cube__bar"></div>
+                            <div class="tech-cube__bar"></div>
+                        </div>
+                    </div>
+                    <div class="tech-cube__face tech-cube__face--left">
+                        <div class="tech-cube__dots">
+                            <div class="tech-cube__dot"></div>
+                            <div class="tech-cube__dot"></div>
+                            <div class="tech-cube__dot"></div>
+                            <div class="tech-cube__dot"></div>
+                        </div>
+                    </div>
+                    <div class="tech-cube__face tech-cube__face--top"></div>
+                    <div class="tech-cube__face tech-cube__face--bottom"></div>
+                </div>
+                <div class="tech-cube__glow"></div>
+                <div class="tech-cube__orbit">
+                    <div class="tech-cube__orbit-ring"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero__scroll" aria-hidden="true">
+            <div class="hero__scroll-mouse">
+                <div class="hero__scroll-wheel"></div>
+            </div>
+            <span class="hero__scroll-text">Листайте</span>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================
+        PORTFOLIO SECTION
+    ========================================== -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section__header reveal">
+                <h2 class="section__title">Наши <span class="gradient-text">проекты</span></h2>
+            </div>
+            <div class="portfolio__grid2">
+
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image">
+                        <div class="portfolio-card__placeholderr" style="background: white">
+                            <img width="100%"   src="https://akkemedevelop.com/uploads/logo/logo1.png" style="background-size: cover">
+
+                        </div>
+                        <div class="portfolio-card__overlay">
+                            <span class="portfolio-card__tag">akkemedevelop.com</span>
+                            <a target="_blank" href="https://akkemedevelop.com/" class="portfolio-card__link" aria-label="Подробнее о проекте NovaPay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">AKKEME DEVELOP</h3>
+                        <p class="portfolio-card__text">Система управления торговой площадью | АК-КЕМЕ строй</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-reveal-delay="100">
+                    <div class="portfolio-card__image">
+                        <div class="portfolio-card__placeholderr" style="background: white; --project-color: #3B82F6;">
+                            <img width="100%"   src="img/logomyTE.png" style="background-size: cover">
+
+                        </div>
+                        <div class="portfolio-card__overlay">
+                            <span class="portfolio-card__tag">myte.oshsu.kg</span>
+                            <a target="_blank" href="https://myte.oshsu.kg/" class="portfolio-card__link" aria-label="Подробнее о проекте NovaPay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">MyTE</h3>
+                        <p class="portfolio-card__text">Управление тестами, аналитикой и карьерой в одной экосистеме</p>
+                    </div>
+                </div>
+
+
+
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image">
+                        <div class="portfolio-card__placeholderr" style="background: white;">
+                            <img width="100%" height="100%"  src="img/logo2.png" style="background-size: cover">
+
+                        </div>
+                        <div class="portfolio-card__overlay">
+                            <span class="portfolio-card__tag">mobility.oshsu.kg</span>
+                            <a target="_blank" href="https://mobility.oshsu.kg/" class="portfolio-card__link" aria-label="Подробнее о проекте NovaPay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">MOBILITY.OSHSU.KG</h3>
+                        <p class="portfolio-card__text">Единая цифровая система
+                            академической мобильности</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-reveal-delay="200">
+                    <div class="portfolio-card__image">
+                        <div class="portfolio-card__placeholder" style="--project-color: #3B82F6;">
+                            <img width="100%"   src="img/oku.png" style="background-size: cover">
+
+                        </div>
+                        <div class="portfolio-card__overlay">
+                            <span class="portfolio-card__tag">oku.oshsu.kg</span>
+                            <a target="_blank" href="http://oku.oshsu.kg/" class="portfolio-card__link" aria-label="Подробнее о проекте NovaPay">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">OKU</h3>
+                        <p class="portfolio-card__text">Автоматизация и реализация БД видеоуроков</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-reveal-delay="100">
+
+                </div>
+
+                <div class="portfolio-card reveal" data-reveal-delay="200">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+        ABOUT SECTION
+    ========================================== -->
+    <section class="portfolio section" id="team">
+        <div class="container">
+            <div class="section__header reveal">
+                <h2 class="section__title">Наша <span class="gradient-text">команда</span></h2>
+                <p class="section__desc">Специалисты, которые разрабатывают и поддерживают наши цифровые продукты.</p>
+            </div>
+
+            <div class="portfolio__grid">
+
+                <!-- Сотрудник 1 -->
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image" style="height: 350px; width: 100%;">
+                        <div class="portfolio-card__placeholderr" style="background: white; ">
+                            <img width="100%" height="100%" src="img/agai.jpeg" style="object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Кудуев Алтынбек Жалилбекович</h3>
+                        <p class="portfolio-card__text">к.тех.н., доцент, Руководитель компании</p>
+                    </div>
+                </div>
+
+                <!-- Сотрудник 2 -->
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image" style="height: 350px; width: 100%;">
+                        <div class="portfolio-card__placeholderr" style="background: white; ">
+                            <img width="100%" height="100%" src="img/elstan.jpeg" style="object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Дарбанов Элстан Ооматбекович</h3>
+                        <p class="portfolio-card__text">Senior Fullstack Разработчик</p>
+                    </div>
+                </div>
+
+
+                <!-- Сотрудник 3 -->
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image" style="height: 350px; width: 100%;">
+                        <div class="portfolio-card__placeholderr" style="background: white; ">
+                            <img width="100%" height="100%" src="img/begi.png" style="object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Баястан уулу Бегислан</h3>
+                        <p class="portfolio-card__text">Fullstack Разработчик</p>
+                    </div>
+                </div>
+
+
+                <!-- Пустые блоки для сохранения пропорций сетки, если нужно -->
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image" style="height: 350px; width: 100%;">
+                        <div class="portfolio-card__placeholderr" style="background: white; ">
+                            <img width="100%" height="100%" src="img/zhoomart.jpeg" style="object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Боруев Жоомарт Үмүтбекович</h3>
+                        <p class="portfolio-card__text">Мобильный Разработчик</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    Galery SECTION
+    ========================================== -->
+    <section class="portfolio section" id="team">
+        <div class="container">
+            <div class="section__header reveal">
+                <h2 class="section__title">Наша <span class="gradient-text">галерея</span></h2>
+<!--                <p class="section__desc">Специалисты, которые разрабатывают и поддерживают наши цифровые продукты.</p>-->
+            </div>
+
+            <div class="portfolio__grid3">
+
+                <!-- Сотрудник 1 -->
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image" style="height: 520px; width: 100%;">
+                        <div class="portfolio-card__placeholderr" style="background: white; ">
+                            <img width="100%" height="550" src="img/proj1.jpg" style="object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Проект "Торт туяк"</h3>
+                        <p class="portfolio-card__text"></p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card reveal" data-reveal-delay="0">
+                    <div class="portfolio-card__image" style="height: 520px; width: 100%;">
+                        <div class="portfolio-card__placeholderr" style="background: white; ">
+                            <img alt="dfvd" width="100%" height="550" src="img/akkeme.jpg" style="object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Демонстрация  проекта "AkkemeDevelop"</h3>
+                        <p class="portfolio-card__text"></p>
+                    </div>
+                </div>
+
+<!--                &lt;!&ndash; Сотрудник 2 &ndash;&gt;-->
+<!--                <div class="portfolio-card reveal" data-reveal-delay="0">-->
+<!--                    <div class="portfolio-card__image" style="height: 520px; width: 100%;">-->
+<!--                        <div class="portfolio-card__placeholderr" style="background: white; ">-->
+<!--                            <img width="100%" height="100%" src="img/elstan.jpeg" style="object-fit: cover; object-position: center;">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="portfolio-card__content">-->
+<!--                        <h3 class="portfolio-card__title">Дарбанов Элстан Ооматбекович</h3>-->
+<!--                        <p class="portfolio-card__text">Senior Fullstack Разработчик</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+<!--                &lt;!&ndash; Сотрудник 3 &ndash;&gt;-->
+<!--                <div class="portfolio-card reveal" data-reveal-delay="0">-->
+<!--                    <div class="portfolio-card__image" style="height: 520px; width: 100%;">-->
+<!--                        <div class="portfolio-card__placeholderr" style="background: white; ">-->
+<!--                            <img width="100%" height="100%" src="img/begi.png" style="object-fit: cover; object-position: center;">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="portfolio-card__content">-->
+<!--                        <h3 class="portfolio-card__title">Баястан уулу Бегислан</h3>-->
+<!--                        <p class="portfolio-card__text">Fullstack Разработчик</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+<!--                &lt;!&ndash; Пустые блоки для сохранения пропорций сетки, если нужно &ndash;&gt;-->
+<!--                <div class="portfolio-card reveal" data-reveal-delay="0"></div>-->
+<!--                <div class="portfolio-card reveal" data-reveal-delay="100"></div>-->
+<!--                <div class="portfolio-card reveal" data-reveal-delay="200"></div>-->
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================
+         SERVICES SECTION
+    ========================================== -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header reveal">
+<!--                <span class="section__label">Услуги</span>-->
+                <h2 class="section__title">Полный цикл<br><span class="gradient-text">разработки</span></h2>
+<!--                <p class="section__desc">От концепции до запуска и поддержки — мы покрываем все этапы создания цифровых продуктов.</p>-->
+            </div>
+
+            <div class="services__grid">
+                <!-- Web Development -->
+                <div class="service-card reveal" data-reveal-delay="0">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                            <path d="M6 8h.01"/>
+                            <path d="M6 12h.01"/>
+                            <path d="M10 8h8"/>
+                            <path d="M10 12h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Web Development</h3>
+                    <p class="service-card__text">Высокопроизводительные веб-приложения, корпоративные порталы, SaaS-платформы и e-commerce решения с современным UI/UX.</p>
+                    <ul class="service-card__tags">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Next.js</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="service-card reveal" data-reveal-delay="100">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2"/>
+                            <line x1="12" y1="18" x2="12" y2="18.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Mobile Development</h3>
+                    <p class="service-card__text">Нативные и кроссплатформенные мобильные приложения для iOS и Android с отзывчивым интерфейсом и офлайн-работой.</p>
+                    <ul class="service-card__tags">
+                        <li>iOS</li>
+                        <li>Android</li>
+                        <li>Flutter</li>
+                        <li>React Native</li>
+                    </ul>
+                </div>
+
+                <!-- AI Solutions -->
+                <div class="service-card reveal" data-reveal-delay="200">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a4 4 0 0 1 4 4c0 1.54-.83 2.89-2.06 3.66a6 6 0 0 1 3.94 5.34c0 3.31-2.69 6-6 6s-6-2.69-6-6a6 6 0 0 1 3.94-5.34C8.83 8.89 8 7.54 8 6a4 4 0 0 1 4-4z"/>
+                            <line x1="9" y1="13" x2="15" y2="13"/>
+                            <line x1="12" y1="10" x2="12" y2="16"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">AI Solutions</h3>
+                    <p class="service-card__text">Интеграция машинного обучения, NLP, компьютерного зрения и предиктивной аналитики в бизнес-процессы клиентов.</p>
+                    <ul class="service-card__tags">
+                        <li>ML</li>
+                        <li>NLP</li>
+                        <li>CV</li>
+                        <li>LLM</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="service-card reveal" data-reveal-delay="0">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Cloud Solutions</h3>
+                    <p class="service-card__text">Архитектура, миграция и оптимизация облачной инфраструктуры на AWS, Azure и GCP с автоматическим масштабированием.</p>
+                    <ul class="service-card__tags">
+                        <li>AWS</li>
+                        <li>Azure</li>
+                        <li>GCP</li>
+                        <li>Serverless</li>
+                    </ul>
+                </div>
+
+                <!-- DevOps -->
+                <div class="service-card reveal" data-reveal-delay="100">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">DevOps</h3>
+                    <p class="service-card__text">CI/CD пайплайны, инфраструктура как код, мониторинг, безопасность и автоматизация всех этапов доставки ПО.</p>
+                    <ul class="service-card__tags">
+                        <li>Docker</li>
+                        <li>K8s</li>
+                        <li>Terraform</li>
+                        <li>GitLab CI</li>
+                    </ul>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="service-card reveal" data-reveal-delay="200">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                            <path d="M2 2l7.5 8.6"/>
+                            <path d="M22 22l-5.5-5.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">UI/UX Design</h3>
+                    <p class="service-card__text">Исследования пользователей, проектирование интерфейсов, прототипирование, дизайн-системы и тестирование юзабилити.</p>
+                    <ul class="service-card__tags">
+                        <li>Figma</li>
+                        <li>Prototyping</li>
+                        <li>User Research</li>
+                        <li>Design Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================
+         STATISTICS SECTION
+    ========================================== -->
+    <section class="statistics section" id="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal" data-reveal-delay="0">
+                    <div class="stat-card__number" data-target="25" data-suffix="+">0</div>
+                    <div class="stat-card__label">Завершенных проектов</div>
+                    <div class="stat-card__bar"></div>
+                </div>
+                <div class="stat-card reveal" data-reveal-delay="100">
+                    <div class="stat-card__number" data-target="25" data-suffix="+">0</div>
+                    <div class="stat-card__label">Довольных клиентов</div>
+                    <div class="stat-card__bar"></div>
+                </div>
+                <div class="stat-card reveal" data-reveal-delay="200">
+                    <div class="stat-card__number" data-target="10" data-suffix="">0</div>
+                    <div class="stat-card__label">Лет в индустрии</div>
+                    <div class="stat-card__bar"></div>
+                </div>
+                <div class="stat-card reveal" data-reveal-delay="300">
+                    <div class="stat-card__number" data-target="4" data-suffix="">0</div>
+                    <div class="stat-card__label">IT-специалистов</div>
+                    <div class="stat-card__bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================
+         TESTIMONIALS SECTION
+    ========================================== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section__header reveal">
+<!--                <span class="section__label">Отзывы</span>-->
+                <h2 class="section__title">Что говорят<br><span class="gradient-text">наши клиенты</span></h2>
+            </div>
+
+            <div class="testimonials__slider reveal" id="testimonialSlider">
+                <div class="testimonials__track" id="testimonialTrack">
+                    <div class="testimonial">
+                        <div class="testimonial__stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <blockquote class="testimonial__quote">NexusTech превзошли все наши ожидания. Их подход к архитектуре позволил нам масштабировать платформу в 10 раз без единого простоя. Это команда настоящих профессионалов.</blockquote>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar" style="--avatar-color: #3B82F6;">АК</div>
+                            <div class="testimonial__info">
+                                <div class="testimonial__name">Алексей Козлов</div>
+                                <div class="testimonial__role">CTO, NovaPay</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial__stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <blockquote class="testimonial__quote">Работа с NexusTech — это всегда предсказуемый результат, чистый код и продуманная архитектура. Они внедрили AI-аналитику, которая сократила время обработки заявок на 65%.</blockquote>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar" style="--avatar-color: #06B6D4;">МВ</div>
+                            <div class="testimonial__info">
+                                <div class="testimonial__name">Мария Волкова</div>
+                                <div class="testimonial__role">CEO, MedCore AI</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial__stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <blockquote class="testimonial__quote">Миграция на облачную архитектуру с NexusTech прошла без единого сбоя. Нагрузка выросла в 40 раз, а latency снизилась на 80%. Профессионализм на высшем уровне.</blockquote>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar" style="--avatar-color: #8B5CF6;">ДП</div>
+                            <div class="testimonial__info">
+                                <div class="testimonial__name">Дмитрий Петров</div>
+                                <div class="testimonial__role">VP Engineering, LogiFlow</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial__stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <blockquote class="testimonial__quote">Разработка нашей LMS заняла 4 месяца вместо запланированных 8. NexusTech не просто пишут код — они думают о продукте и предлагают лучшие решения.</blockquote>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar" style="--avatar-color: #10B981;">ЕС</div>
+                            <div class="testimonial__info">
+                                <div class="testimonial__name">Елена Смирнова</div>
+                                <div class="testimonial__role">Product Director, EduCloud</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials__controls">
+                    <button class="testimonials__btn testimonials__btn--prev" id="testimonialPrev" aria-label="Предыдущий отзыв">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </button>
+                    <div class="testimonials__dots" id="testimonialDots"></div>
+                    <button class="testimonials__btn testimonials__btn--next" id="testimonialNext" aria-label="Следующий отзыв">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+    ========================================== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section__header reveal">
+<!--                <span class="section__label">Контакты</span>-->
+                <h2 class="section__title">Давайте создадим<br><span class="gradient-text">что-то великое</span></h2>
+                <p class="section__desc">Опишите ваш проект, и мы свяжемся с вами в течение 24 часов для обсуждения деталей.</p>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact__form-wrapper glass reveal" data-reveal-delay="0">
+                    <form class="contact__form" id="contactForm" action="#" method="POST" novalidate>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Имя</label>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="company" class="form__label">Компания</label>
+                            <input type="text" id="company" name="company" class="form__input" placeholder="Название компании">
+                        </div>
+                        <div class="form__group">
+                            <label for="service" class="form__label">Интересующая услуга</label>
+                            <select id="service" name="service" class="form__select">
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile Development</option>
+                                <option value="ai">AI Solutions</option>
+                                <option value="cloud">Cloud Solutions</option>
+                                <option value="devops">DevOps</option>
+                                <option value="design">UI/UX Design</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Сообщение</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Расскажите о вашем проекте..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--lg btn--full">
+                            <span>Отправить сообщение</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__info reveal" data-reveal-delay="100">
+                    <div class="contact__info-card glass">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact__info-text">
+                            <span class="contact__info-label">Телефон</span>
+                            <a href="tel:+74951234567" class="contact__info-value">+996 773 588 633</a>
+                        </div>
+                    </div>
+                    <div class="contact__info-card glass">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22 6 12 13 2 6"/>
+                            </svg>
+                        </div>
+                        <div class="contact__info-text">
+                            <span class="contact__info-label">Email</span>
+                            <a href="mailto:hello@nexustech.ru" class="contact__info-value">proservicetechkg@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact__info-card glass">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact__info-text">
+                            <span class="contact__info-label">Адрес</span>
+                            <span class="contact__info-value">г. Ош Алымбек Датка 331<br>ОшГУ гл. корпус</span>
+                        </div>
+                    </div>
+                    <div class="contact__info-card glass">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="contact__info-text">
+                            <span class="contact__info-label">Режим работы</span>
+                            <span class="contact__info-value">Пн–Пт: 9:00 – 19:00<br>Сб–Вс: выходной</span>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="contact__map glass" aria-label="Карта расположения офиса">
+                        <div class="contact__map-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>г. Ош Курманжан Датка</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+    ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo" aria-label="NexusTech Главная">
+                        <img src="img/logo.png" class="footer__logo-icon">
+
+                        <span class="footer__logo-text">ProService<span>TechKG</span></span>
+                    </a>
+                    <p class="footer__desc">Инновационные IT-решения для амбициозных компаний. Мы превращаем сложные задачи в элегантные цифровые продукты.</p>
+<!--                    <div class="footer__social">-->
+<!--                        <a href="#" class="footer__social-link" aria-label="instagram">-->
+<!--                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>-->
+<!--                        </a>-->
+<!--                        <a href="#" class="footer__social-link" aria-label="telegram">-->
+<!--                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>-->
+<!--                        </a>-->
+<!--                        <a href="#" class="footer__social-link" aria-label="Youtube">-->
+<!--                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>-->
+<!--                        </a>-->
+<!--                        <a href="#" class="footer__social-link" aria-label="Telegram">-->
+<!--                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.477-1.635z"/></svg>-->
+<!--                        </a>-->
+<!--                    </div>-->
+                </div>
+
+<!--                <div class="footer__links">-->
+<!--                    <div class="footer__links-col">-->
+<!--                        <h4 class="footer__links-title">Компания</h4>-->
+<!--                        <ul class="footer__links-list">-->
+<!--                            <li><a href="#about">О нас</a></li>-->
+<!--                            <li><a href="#">Команда</a></li>-->
+<!--                            <li><a href="#">Карьера</a></li>-->
+<!--                            <li><a href="#">Блог</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="footer__links-col">-->
+<!--                        <h4 class="footer__links-title">Услуги</h4>-->
+<!--                        <ul class="footer__links-list">-->
+<!--                            <li><a href="#services">Web-разработка</a></li>-->
+<!--                            <li><a href="#services">Mobile-разработка</a></li>-->
+<!--                            <li><a href="#services">AI-решения</a></li>-->
+<!--                            <li><a href="#services">Cloud & DevOps</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="footer__links-col">-->
+<!--                        <h4 class="footer__links-title">Ресурсы</h4>-->
+<!--                        <ul class="footer__links-list">-->
+<!--                            <li><a href="#">Документация</a></li>-->
+<!--                            <li><a href="#">API</a></li>-->
+<!--                            <li><a href="#">Статус систем</a></li>-->
+<!--                            <li><a href="#contact">Поддержка</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 ProService TechKG. Все права защищены.</p>
+                <div class="footer__bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         BACK TO TOP BUTTON
+    ========================================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
