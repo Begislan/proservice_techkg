@@ -1928,7 +1928,7 @@ a.contact__info-value:hover {
     .about__grid,
     .services__grid,
     .why-us__grid,
-    .portfolio__grid {
+    .portfolio__grid ,.portfolio__grid2,.portfolio__grid3 {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1985,7 +1985,7 @@ a.contact__info-value:hover {
     .about__grid,
     .services__grid,
     .why-us__grid,
-    .portfolio__grid,
+    .portfolio__grid,.portfolio__grid ,.portfolio__grid2,.portfolio__grid3,
     .tech-grid,
     .stats-grid {
         grid-template-columns: 1fr;
